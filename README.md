@@ -1,8 +1,5 @@
-## A Material design LightDM Webkit2 greeter theme
+## A Material design LightDM Webkit greeter theme
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fartur9010%2Flightdm-webkit-material.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fartur9010%2Flightdm-webkit-material?ref=badge_shield)
-
-## [PROJECT ABANDONED]
-### You can fork it and develop it according to your tastes.
 
 This is a theme for LightDM Webkit2 (`lightdm-webkit2-greeter`).
 
