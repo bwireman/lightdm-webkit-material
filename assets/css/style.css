@@ -20,11 +20,18 @@ body {
 }
 
 .option {
-    padding: 20px;
+    padding: 30px;
+    max-height: 25%; 
+    max-width: 90%;
+    min-height: 25%;
+    min-width: 90%; 
+    text-align: center;
+    align-self: auto; 
 }
 
 .option:hover {
-    opacity: 1;
+    opacity: .15;
+    background-color: #263238;
 }
 
 md-card {
@@ -53,7 +60,7 @@ md-select-value {
     border-radius: 100%;
 }
 
-footer {
+header {
     padding: 4px 10px;
     background-color: rgba(0, 0, 0, 0.09);
     color: white;

@@ -11,29 +11,36 @@
 
 <body ng-app="webkitMaterial" class="background">
     <div class="ng-cloak" id="wrapper" layout="column" layout-align="center stretch">
-        <md-button id="help-button" class="md-icon-button" aria-label="Help" ng-click="$root.card = 'help'"><i class="fa fa-question-circle"></i></md-button>
+        <!-- Header -->
+        <header layout="row" align="center center">
+            <div id="clock" layout="column" layout-align="center center">
+                <span ng-controller="timeController">{{clock| date:format}}</span>
+
+                <md-button id="help-button" class="md-icon-button" aria-label="Help" ng-click="$root.card = 'help'"><i
+                    class="fa fa-question-circle"></i></md-button>
+            </div>
+            
+        </header>
         <main layout="column" layout-align="center center" flex ng-switch on="$root.card">
             <div layout="row">
                 <md-card ng-class="animation" ng-style="animationDuration" ng-switch-default class="option-card">
-                    <md-card-content layout="column">
+                    <md-card-content layout="column" layout-align="space-between center">
 
-                        <div class="content">
-                            <md-button class="option" ng-click="$root.card = 'shutdown'" title="Shutdown">
+                            <div class="option" ng-click="$root.card = 'shutdown'" title="Shutdown">
                                 <i class="fa fa-power-off"></i>
-                            </md-button>
+                            </div>
 
-                            <md-button class="option" ng-click="$root.card = 'restart'" title="Restart">
+                            <div class="option" ng-click="$root.card = 'restart'" title="Restart">
                                 <i class="fa fa-refresh"></i>
-                            </md-button>
+                            </div>
 
-                            <md-button class="option" ng-click="$root.card = 'suspend'" title="Suspend">
+                            <div class="option" ng-click="$root.card = 'suspend'" title="Suspend">
                                 <i class="fa fa-power-off fa-rotate-90"></i>
-                            </md-button>
+                            </div>
 
-                            <md-button class="option" ng-click="$root.card = 'hibernate'" title="Hibernate">
-                                <i class="fa fa-power-off"></i>
-                            </md-button>
-                        </div>
+                            <div class="option" ng-click="$root.card = 'hibernate'" title="Hibernate">
+                                <i class="fa fa-bed"></i>
+                            </div>
                     </md-card-content>
                 </md-card>
                 <!-- Login card -->
@@ -45,7 +52,8 @@
                             <form layout="column" layout-align="center stretch" ng-submit="signIn()" name="loginForm">
                                 <md-input-container>
                                     <label>User</label>
-                                    <md-select ng-disabled="users.length == 1" id="user" name="user" class="md-select" ng-model="user" required>
+                                    <md-select ng-disabled="users.length == 1" id="user" name="user" class="md-select"
+                                        ng-model="user" required>
                                         <md-option ng-repeat="u in users" value="{{u.name}}">
                                             {{u.display_name}}
                                         </md-option>
@@ -63,7 +71,8 @@
                                 </md-input-container>
                                 <md-input-container>
                                     <label>Session</label>
-                                    <md-select ng-disabled="users.length == 1" id="session" name="session" ng-model="session" required>
+                                    <md-select ng-disabled="users.length == 1" id="session" name="session" ng-model="session"
+                                        required>
                                         <md-option ng-repeat="s in sessions" value="{{s.key}}">
                                             {{s.name}}
                                         </md-option>
@@ -144,13 +153,6 @@
             </md-card>
 
         </main>
-
-        <!-- Footer -->
-        <footer layout="row" align="center center">
-            <div id="clock" layout="column" layout-align="center center">
-                <span ng-controller="timeController">{{clock| date:format}}</span>
-            </div>
-        </footer>
     </div>
 
     <!-- Required libs -->
