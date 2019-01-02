@@ -2,9 +2,11 @@
 
 This is a theme for LightDM Webkit (`lightdm-webkit-greeter`).
 
+Forked from https://github.com/artur9010/lightdm-webkit-material
+
 ### Screenshot
 
-
+![alt text](https://raw.githubusercontent.com/bwireman/lightdm-webkit-material/master/Screenshot_2019-01-01_19-39-14.png)
 
 ### Features
 
@@ -22,7 +24,7 @@ This was created for use on Arch Linux, and then significantly stripped down, so
 
 ### How to install
 
-[Check our wiki](https://github.com/artur9010/lightdm-webkit-material/wiki/Installation)
+[Check their wiki](https://github.com/artur9010/lightdm-webkit-material/wiki/Installation)
 
 ### Updating
 1. In the terminal, `cd` to `/usr/share/lightdm-webkit/themes/lightdm-webkit-material/`
