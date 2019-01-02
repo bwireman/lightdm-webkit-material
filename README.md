@@ -6,7 +6,7 @@ Forked from https://github.com/artur9010/lightdm-webkit-material
 
 ### Screenshot
 
-![alt text](https://raw.githubusercontent.com/bwireman/lightdm-webkit-material/master/Screenshot_2019-01-01_19-39-14.png)
+![alt text](https://raw.githubusercontent.com/bwireman/lightdm-webkit-material/master/Screenshot.png)
 
 ### Features
 
