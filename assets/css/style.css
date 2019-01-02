@@ -5,19 +5,26 @@ html, body, #wrapper {
     background: none;
 }
 
+.background {
+    background-image: url('../ui/keyboards.jpg')
+}
+
 body {
     background-size: cover;
     background-attachment: fixed;
     -webkit-user-select: none
 }
 
-#particles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+.option-card {
+    max-width: 128px;
+}
+
+.option {
+    padding: 20px;
+}
+
+.option:hover {
+    opacity: 1;
 }
 
 md-card {
