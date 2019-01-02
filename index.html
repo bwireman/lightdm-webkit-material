@@ -16,10 +16,14 @@
             <div id="clock" layout="column" layout-align="center center">
                 <span ng-controller="timeController">{{clock| date:format}}</span>
 
-                <md-button id="help-button" class="md-icon-button" aria-label="Help" ng-click="$root.card = 'help'"><i
-                    class="fa fa-question-circle"></i></md-button>
+                
             </div>
             
+            <span flex></span>
+
+            <md-button id="help-button" class="md-icon-button" aria-label="Help" ng-click="$root.card = 'help'"><i
+                class="fa fa-question-circle"></i></md-button>
+
         </header>
         <main layout="column" layout-align="center center" flex ng-switch on="$root.card">
             <div layout="row">
@@ -130,7 +134,7 @@
                 </md-card-content>
                 <md-card-actions layout="row" layout-align="space-around center">
                     <md-button ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</md-button>
-                    <md-button onclick="lightdm.hibernate();"><i class="fa fa-power-off "></i> Hibernate</md-button>
+                    <md-button onclick="lightdm.hibernate();"><i class="fa fa-bed"></i> Hibernate</md-button>
                 </md-card-actions>
             </md-card>
 
@@ -141,7 +145,7 @@
                     <b>Originally forked from</b>
                     <br />
                     <small><i>https://github.com/artur9010/lightdm-webkit-material</i></small>
-                    <b>Now maintained at</b>
+                    <b>This version kept at</b>
                     <br />
                     <small><i>https://github.com/bwireman/lightdm-webkit-material</i></small>
                     <div style="text-align: center;"><small>Crafted with <i class="fa fa-heart"></i> in Poland and the

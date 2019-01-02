@@ -72,12 +72,6 @@ ng-cloak {
     display: none;
 }
 
-#help-button {
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
 .ng-leave {
     display: none;
 }
