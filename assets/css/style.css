@@ -29,7 +29,13 @@ body {
     align-self: auto; 
 }
 
-.option:hover {
+.dialogButton {
+    text-align: center;
+    padding: 20px;
+    /* align-self: auto; */
+}
+
+.hover:hover {
     background-color: rgba(0, 0, 0, 0.09);
 }
 

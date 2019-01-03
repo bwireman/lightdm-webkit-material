@@ -30,19 +30,19 @@
                 <md-card ng-class="animation" ng-style="animationDuration" ng-switch-default class="option-card">
                     <md-card-content layout="column" layout-align="space-between center">
 
-                            <div class="option" ng-click="$root.card = 'shutdown'" title="Shutdown">
+                            <div class="option hover" ng-click="$root.card = 'shutdown'" title="Shutdown">
                                 <i class="fa fa-power-off"></i>
                             </div>
 
-                            <div class="option" ng-click="$root.card = 'restart'" title="Restart">
+                            <div class="option hover" ng-click="$root.card = 'restart'" title="Restart">
                                 <i class="fa fa-refresh"></i>
                             </div>
 
-                            <div class="option" ng-click="$root.card = 'suspend'" title="Suspend">
+                            <div class="option hover" ng-click="$root.card = 'suspend'" title="Suspend">
                                 <i class="fa fa-power-off fa-rotate-90"></i>
                             </div>
 
-                            <div class="option" ng-click="$root.card = 'hibernate'" title="Hibernate">
+                            <div class="option hover" ng-click="$root.card = 'hibernate'" title="Hibernate">
                                 <i class="fa fa-bed"></i>
                             </div>
                     </md-card-content>
@@ -97,8 +97,8 @@
                     Do you really want to shutdown?
                 </md-card-content>
                 <md-card-actions layout="row" layout-align="space-around center">
-                    <md-button ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</md-button>
-                    <md-button onclick="lightdm.shutdown();"><i class="fa fa-power-off"></i> Shutdown</md-button>
+                    <div class="dialogButton hover" ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</div>
+                    <div class="dialogButton hover" onclick="lightdm.shutdown();"><i class="fa fa-power-off"></i> Shutdown</div>
                 </md-card-actions>
             </md-card>
 
@@ -109,8 +109,8 @@
                     Do you really want to restart?
                 </md-card-content>
                 <md-card-actions layout="row" layout-align="space-around center">
-                    <md-button ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</md-button>
-                    <md-button onclick="lightdm.restart();"><i class="fa fa-refresh"></i> Restart</md-button>
+                    <div class="dialogButton hover" ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</div>
+                    <div class="dialogButton hover" onclick="lightdm.restart();"><i class="fa fa-refresh"></i> Restart</div>
                 </md-card-actions>
             </md-card>
 
@@ -121,8 +121,8 @@
                     Do you really want to suspend?
                 </md-card-content>
                 <md-card-actions layout="row" layout-align="space-around center">
-                    <md-button ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</md-button>
-                    <md-button onclick="lightdm.suspend();"><i class="fa fa-power-off fa-rotate-90"></i> Suspend</md-button>
+                    <div class="dialogButton hover" ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</div>
+                    <div class="dialogButton hover" onclick="lightdm.suspend();"><i class="fa fa-power-off fa-rotate-90"></i> Suspend</div>
                 </md-card-actions>
             </md-card>
 
@@ -133,8 +133,8 @@
                     Do you really want to hibernate?
                 </md-card-content>
                 <md-card-actions layout="row" layout-align="space-around center">
-                    <md-button ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</md-button>
-                    <md-button onclick="lightdm.hibernate();"><i class="fa fa-bed"></i> Hibernate</md-button>
+                    <div class="dialogButton hover" ng-click="$root.card = 'login'"><i class="fa fa-ban"></i> Cancel</div>
+                    <div class="dialogButton hover" onclick="lightdm.hibernate();"><i class="fa fa-bed"></i> Hibernate</div>
                 </md-card-actions>
             </md-card>
 
@@ -152,7 +152,7 @@
                             USA.</small></div>
                 </md-card-content>
                 <md-card-actions layout="row" layout-align="space-around center">
-                    <md-button flex ng-click="$root.card = 'login'">Ok</md-button>
+                    <div class="dialogButton hover" flex ng-click="$root.card = 'login'">Ok</div>
                 </md-card-actions>
             </md-card>
 
